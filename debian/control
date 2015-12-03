@@ -1,0 +1,13 @@
+Source: odroid-boot-services
+Section: misc
+Priority: optional
+Maintainer: Rohan Garg <rohan@kde.org>
+Build-Depends: debhelper (>= 9), dh-systemd
+Standards-Version: 3.9.6
+Homepage: https://github.com/netrunner-odroid/odroid-boot-services
+
+Package: odroid-boot-services
+Architecture: all
+Depends: linux-image-c1, ${misc:Depends}
+Description: Init script for the C1
+ Init script to do init stuff for the C1

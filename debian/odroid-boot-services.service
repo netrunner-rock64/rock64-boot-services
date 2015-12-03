@@ -1,0 +1,8 @@
+[Unit]
+Description=ODROID Init service
+
+[Service]
+ExecStart=/etc/initramfs-tools/scripts/local-top/c1_init.sh
+
+[Install]
+WantedBy=multi-user.target
