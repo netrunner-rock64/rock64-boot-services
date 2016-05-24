@@ -3,7 +3,7 @@ Description=ODROID Init service
 
 [Service]
 Type=oneshot
-ExecStart=/etc/initramfs-tools/scripts/local-top/c1_init.sh
+ExecStart=/usr/sbin/c1_init.sh
 
 [Install]
 WantedBy=multi-user.target
