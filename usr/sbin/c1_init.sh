@@ -4,6 +4,7 @@ for x in $(cat /proc/cmdline); do
 	case ${x} in 
 		m_bpp=*) export bpp=${x#*=} ;;
 		hdmimode=*) export mode=${x#*=} ;;
+		timestamp=*) export timestamp=${x#*=} ;;
 	esac
 done
 
@@ -88,3 +89,7 @@ echo 7 > /sys/class/net/eth0/queues/tx-0/xps_cpus
 echo 1,2 > /proc/irq/40/smp_affinity_list
 
 timedatectl set-ntp 1
+
+if [ -n "$timestamp" ]; then
+    timedatectl set-time $timestamp
+fi
