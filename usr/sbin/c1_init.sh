@@ -88,8 +88,8 @@ echo 7 > /sys/class/net/eth0/queues/tx-0/xps_cpus
 # Move IRQ's of ethernet to CPU1/2
 echo 1,2 > /proc/irq/40/smp_affinity_list
 
-timedatectl set-ntp 1
-
 if [ -n "$timestamp" ]; then
     timedatectl set-time $timestamp
 fi
+
+timedatectl set-ntp 1
