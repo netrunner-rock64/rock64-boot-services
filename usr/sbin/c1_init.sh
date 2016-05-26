@@ -89,7 +89,10 @@ echo 7 > /sys/class/net/eth0/queues/tx-0/xps_cpus
 echo 1,2 > /proc/irq/40/smp_affinity_list
 
 if [ -n "$timestamp" ]; then
-    timedatectl set-time "$timestamp"
+DT=`date +%Y%m%d`
+	if [ "$DT" -lt "$timestamp" ]; then
+		date -s "$timestamp"
+  fi
 fi
 
 timedatectl set-ntp 1
