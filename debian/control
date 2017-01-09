@@ -8,6 +8,6 @@ Homepage: https://github.com/netrunner-odroid/odroid-boot-services
 
 Package: odroid-boot-services
 Architecture: all
-Depends: c1-bootini, ${misc:Depends}
+Depends: c1-bootini, fbset, ${misc:Depends}
 Description: Init script for the C1
  Init script to do init stuff for the C1
