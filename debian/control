@@ -7,7 +7,7 @@ Standards-Version: 3.9.6
 Homepage: https://github.com/netrunner-odroid/odroid-boot-services
 
 Package: odroid-boot-services
-Architecture: all
-Depends: c1-bootini, fbset, ${misc:Depends}
+Architecture: armhf arm64
+Depends: fbset, ${misc:Depends}
 Description: Init script for the C1
  Init script to do init stuff for the C1
