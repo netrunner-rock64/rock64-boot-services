@@ -1,0 +1,9 @@
+[Unit]
+Description=ODROID Init service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/c2_init.sh
+
+[Install]
+WantedBy=multi-user.target
