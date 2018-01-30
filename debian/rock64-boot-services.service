@@ -1,9 +1,9 @@
 [Unit]
-Description=ODROID Init service
+Description=ROCK64 Init service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/c1_init.sh
+ExecStart=/usr/sbin/rock64_init.sh
 
 [Install]
 WantedBy=multi-user.target

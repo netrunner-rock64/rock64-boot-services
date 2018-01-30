@@ -1,13 +1,13 @@
-Source: odroid-boot-services
+Source: rock64-boot-services
 Section: misc
 Priority: optional
-Maintainer: Rohan Garg <rohan@kde.org>
+Maintainer: Leszek Lesner <leszek.lesner@web.de>
 Build-Depends: debhelper (>= 9), dh-systemd
 Standards-Version: 3.9.6
-Homepage: https://github.com/netrunner-odroid/odroid-boot-services
+Homepage: https://github.com/netrunner-rock64/rock64-boot-services
 
-Package: odroid-boot-services
-Architecture: armhf arm64
+Package: rock64-boot-services
+Architecture: arm64
 Depends: fbset, ${misc:Depends}
-Description: Init script for the C1
- Init script to do init stuff for the C1
+Description: Init script for the Rock64
+ Init script to do init stuff for the Rock64

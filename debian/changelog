@@ -1,5 +1,5 @@
-odroid-boot-services (0) UNRELEASED; urgency=low
+rock64-boot-services (0) UNRELEASED; urgency=low
 
   * Initial release
 
- -- Rohan Garg <rohan@kde.org>  Thu, 03 Dec 2015 22:33:10 +0100
+ -- Leszek Lesner <leszek.lesner@web.de>  Tue, 30 Jan 2018 13:47:10 +0200
